@@ -1,0 +1,16 @@
+.contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-7xs);
+  background-color: var(--base-white-2);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-13xl) 0 0;
+  gap: var(--gap-5xs);
+  line-height: normal;
+  letter-spacing: normal;
+}

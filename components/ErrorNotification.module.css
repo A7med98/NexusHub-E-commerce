@@ -1,0 +1,125 @@
+.alertcrossCircleIcon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 30px;
+}
+.label {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-5xs);
+}
+
+.button1 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  line-height: 26px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  height: 26px;
+  width: 51px;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+
+.button3 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  line-height: 26px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button2 {
+  height: 26px;
+  width: 51px;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+
+.textButton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.curvedCross {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  flex-shrink: 0;
+  min-height: 30px;
+}
+.alert,
+.alert1,
+.footerInstance {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.alert1 {
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--danger-50);
+  border: 1px solid var(--danger-400);
+  overflow-x: auto;
+  flex-direction: row;
+  padding: var(--padding-base) var(--padding-mid);
+  gap: var(--gap-base);
+}
+.alert,
+.footerInstance {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.alert {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-xs) var(--padding-21xl);
+}
+.footerInstance {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 var(--padding-3xs);
+  text-align: left;
+  font-size: var(--heading-website-heading-7-semi-bold-size);
+  color: var(--neutral-900);
+  font-family: var(--text-m-medium);
+}
+@media screen and (max-width: 450px) {
+  .label {
+    font-size: var(--text-m-medium-size);
+    line-height: 24px;
+  }
+}

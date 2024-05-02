@@ -1,0 +1,366 @@
+.subTitle {
+  color: var(--neutral-900);
+}
+.title {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 44px;
+  font-weight: 600;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.divider,
+.label {
+  align-self: stretch;
+  position: relative;
+}
+.label {
+  font-size: var(--heading-mobile-heading-5-medium-size);
+  letter-spacing: -0.01em;
+  line-height: 36px;
+  font-weight: 500;
+  font-family: var(--text-m-medium);
+  color: var(--neutral-900);
+  text-align: left;
+}
+.divider {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.labelDescription {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  gap: var(--gap-xl);
+}
+.container,
+.label1 {
+  font-family: var(--text-m-medium);
+}
+.label1 {
+  position: relative;
+  font-size: var(--text-l-regular-size);
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--neutral-900);
+  text-align: center;
+}
+.container {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 26px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--text-m-medium-size);
+  color: var(--neutral-500);
+  min-width: 216px;
+  max-width: 100%;
+}
+
+.inputField1 {
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--base-white);
+  border: 1px solid var(--gray-400);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-lgi);
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+
+.inputLabel,
+.inputFieldSupportText {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+}
+.inputLabel {
+  gap: var(--gap-base);
+}
+.container1,
+.label2 {
+  font-family: var(--text-m-medium);
+  font-size: var(--text-m-medium-size);
+}
+.label2 {
+  position: relative;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--neutral-900);
+  text-align: center;
+  display: inline-block;
+  min-width: 75px;
+}
+.container1 {
+  width: calc(100% - 62px);
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 26px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--neutral-500);
+  min-width: 208px;
+}
+.iconEyeOpen {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.inputField3 {
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--base-white);
+  border: 1px solid var(--gray-400);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-lgi);
+  gap: var(--gap-base);
+}
+
+.inputFieldSupportText1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+
+.thePasswordMust {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--caption-caption-medium-size);
+  line-height: 18px;
+  font-family: var(--text-m-medium);
+  color: #818181;
+  text-align: left;
+}
+.fRAME {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-xs);
+}
+.checkbox1 {
+  margin: 0;
+  height: 26px;
+  width: 26px;
+  border-radius: var(--br-7xs);
+}
+.checkbox2 {
+  flex: 1;
+  position: relative;
+  font-size: var(--text-m-medium-size);
+  line-height: 26px;
+  font-family: var(--text-m-medium);
+  color: var(--neutral-600);
+  text-align: left;
+}
+.checkboxPassword {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  min-width: 125px;
+}
+.forgotYourPassword {
+  flex: 1;
+  position: relative;
+  font-size: var(--text-m-medium-size);
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--text-m-medium);
+  color: var(--neutral-900);
+  text-align: right;
+  display: inline-block;
+  min-width: 125px;
+}
+.checkbox {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.usernamePassword,
+.inputCheckbox {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xl);
+}
+
+.button1 {
+  position: relative;
+  font-size: var(--text-m-medium-size);
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--text-m-medium);
+  color: var(--base-white);
+  text-align: center;
+  display: inline-block;
+  min-width: 52px;
+}
+
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-xl);
+  background-color: var(--primary-500);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+.dontHaveAn {
+  font-size: var(--text-m-medium-size);
+  line-height: 26px;
+  font-family: var(--text-m-medium);
+  color: var(--neutral-600);
+}
+.span {
+  font-size: var(--text-s-regular-size);
+  line-height: 24px;
+}
+.register1 {
+  font-size: var(--text-m-medium-size);
+  line-height: 26px;
+}
+.register {
+  font-weight: 500;
+  font-family: var(--text-m-medium);
+  color: var(--neutral-900);
+}
+.dontHaveAnContainer {
+  align-self: stretch;
+  position: relative;
+  text-align: left;
+}
+.buttonInformation,
+.form2 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+.buttonInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.form2 {
+  gap: var(--gap-13xl);
+  max-width: 100%;
+}
+.form2,
+.form,
+.loginpage,
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form {
+  margin: 0;
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--base-white);
+  border: 1px solid var(--gray-200);
+  box-sizing: border-box;
+  align-items: flex-start;
+  padding: var(--padding-3xl) var(--padding-4xl);
+  gap: var(--gap-13xl);
+  max-width: 100%;
+}
+.loginpage,
+.loginContainer {
+  align-items: center;
+}
+.loginContainer {
+  width: 448px;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+}
+.loginpage {
+  width: 100%;
+  position: relative;
+  background-color: var(--base-white-2);
+  overflow: hidden;
+  padding: 80px var(--padding-xl);
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--heading-website-heading-4-semi-bold-size);
+  color: var(--primary-500);
+  font-family: var(--text-m-medium);
+}
+@media screen and (max-width: 750px) {
+  .nexushub {
+    font-size: var(--font-size-7xl);
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .labelInputForm {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .loginStep1 {
+    gap: var(--gap-21xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .label,
+  .nexushub {
+    font-size: var(--font-size-lgi);
+    line-height: 26px;
+  }
+  .label {
+    line-height: 29px;
+  }
+  .form2,
+  .labelInputForm,
+  .loginContainer {
+    gap: var(--gap-base);
+  }
+}

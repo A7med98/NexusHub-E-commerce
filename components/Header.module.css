@@ -1,0 +1,302 @@
+.hub {
+  color: var(--neutral-900);
+}
+.nexushub {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 44px;
+  font-weight: 600;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.nexushubWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  text-align: left;
+  gap: 16px;
+}
+.iconSearch {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.container1,
+.description {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.description {
+  width: calc(100% - 684px);
+  border: 0;
+  outline: 0;
+  font-family: var(--text-m-medium);
+  font-size: var(--text-m-medium-size);
+  background-color: transparent;
+  height: 26px;
+  position: relative;
+  line-height: 26px;
+  color: var(--neutral-500);
+  text-align:left;
+  justify-content:flex-start;
+  min-width: 700px;
+  padding: 0;
+}
+.container1 {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 var(--padding-641xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+
+.inputField1 {
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--base-white);
+  border: 1px solid var(--gray-400);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-lgi);
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+
+.inputField,
+.inputFieldSupportText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.inputFieldSupportText {
+  align-self: stretch;
+  gap: var(--gap-5xs);
+  text-align: left;
+  font-size: var(--text-s-regular-size);
+  color: var(--neutral-600);
+}
+.inputField {
+  border: 0;
+  background-color: transparent;
+  height: 54px;
+  width: 793px;
+  font-family: var(--text-m-medium);
+  font-size: var(--text-m-medium-size);
+  color: var(--neutral-500);
+  max-width: 100%;
+}
+
+.curvedMessageSquare {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.bagIcon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+}
+.text {
+  text-decoration: none;
+  position: relative;
+  line-height: 120%;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 7px;
+  color:#FFFFFF
+}
+.verticalContainer {
+  position: absolute;
+  top: 0;
+  left: 19px;
+  border-radius: var(--br-base);
+  background-color: var(--colors-texts-text-high-emphasis);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) var(--padding-6xs-5);
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+.iconWrap2 {
+  border-radius: var(--br-3xs);
+  flex-direction: row;
+  padding: var(--padding-9xs);
+}
+.iconWrap {
+  text-decoration: none;
+  align-self: stretch;
+  height: 36px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--base-white);
+}&:focus, &:hover, &:visited, &:link{
+  text-decoration: none;
+}
+.iconWrapWrapper {
+  width: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+}
+.accountIcon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 40px;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.container,
+.containerInner,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+}
+.containerInner {
+  width: 104px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+  font-size: var(--caption-caption-medium-size);
+  color: var(--base-white);
+  font-family: var(--caption-caption-medium);
+}
+.container {
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+
+.cart,
+.contact,
+.home {
+  
+  text-decoration: none;
+  color: var(--neutral-500);
+  position: relative;
+  line-height: 26px;
+  font-weight: 16px;
+  display: inline-block;
+}
+&:focus, &:hover, &:visited, &:link{
+  text-decoration: none;
+}
+.cart.active,
+.contact.active,
+.home.active{
+  color: var(--primary-500);
+  font-weight: 600;
+  min-width: 46px;
+}
+.cart,
+.contact,
+.home {
+  font-weight: 500;
+}
+
+.navBar {
+  margin: 0;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  gap: var(--gap-29xl);
+  text-align: left;
+  font-size: var(--text-m-medium-size);
+  color: var(--neutral-500);
+  font-family: var(--text-m-medium);
+}
+.containerParent,
+.fRAMEHOME {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.containerParent {
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-21xl);
+}
+.fRAMEHOME {
+  flex-wrap: wrap;
+  height: 224px;
+  flex-direction: row;
+  padding: 0 var(--padding-21xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--heading-website-heading-4-semi-bold-size);
+  color: var(--primary-500);
+  font-family: var(--text-m-medium);
+}
+.dividerIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: clip;
+  max-height: unset;
+}
+.horizontalDivider,
+.horizontalDivider1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.horizontalDivider1 {
+  height: 0;
+  flex: 1;
+  flex-direction: column;
+  max-width: 100%;
+}
+.horizontalDivider {
+  box-sizing: border-box;
+  align-self: stretch;
+  height: 0;
+  flex-direction: row;
+  padding: 0 var(--padding-21xl);
+  max-width: 100%;
+}
+@media screen and (max-width: 450px) {
+  .navBar {
+    display: none;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .inputField1{
+    display: none;
+
+  }
+
+}

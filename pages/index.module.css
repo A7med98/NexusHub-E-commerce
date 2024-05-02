@@ -1,0 +1,240 @@
+.home {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-7xs);
+  background-color: var(--base-white-2);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 32px 0 0;
+  gap: var(--gap-21xl);
+  line-height: normal;
+  letter-spacing: normal;
+}  
+.hour,
+.minute,
+.second{
+font-family: inter;
+flex: 1;
+border-radius: var(--br-7xs);
+display: flex;
+align-self: center;
+
+padding: var(--padding-5xs) var(--padding-xs-5);
+
+background-color: var(--primary-500);
+
+}
+
+.hourDiv,
+.specialDiscount {
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.specialDiscount {
+  margin: 0;
+  font-size: 28px;
+  line-height: 40px;
+  font-family: var(--text-m-medium);
+
+}
+
+.hourDiv,.minuteDiv,.secondDiv {
+  line-height: 30px;
+  display: inline-block;
+  min-width: 23px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+}
+
+.dot,
+.hour {
+  background-color: var(--primary-500);
+}
+
+
+
+.dot {
+  width: 6px;
+  height: 6px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.dotsGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+
+.minuteDiv {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 30px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 26px;
+}
+
+
+.minute {
+  background-color: var(--primary-500);
+}
+
+.secondDiv {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 30px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 25px;
+}
+
+.labelTime,
+.second,
+.time {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.labelTime,
+.time {
+  flex-direction: row;
+}
+
+.time {
+  width: 198px;
+  justify-content: center;
+  gap: var(--gap-xs);
+  font-size: var(--heading-website-heading-7-semi-bold-size);
+  color: var(--base-white);
+}
+
+.labelTime {
+  width: 1360px;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  max-width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.iconArrowLeft {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+
+
+.previousButton {
+  cursor: pointer;
+  border: 1px solid var(--neutral-900);
+  padding: var(--padding-3xs) var(--padding-lgi);
+  background-color: transparent;
+  flex: 1;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+
+
+
+.iconArrowRight {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.nextButton {
+  cursor: pointer;
+  border: 1px solid var(--neutral-900);
+  padding: var(--padding-3xs) var(--padding-lgi);
+  background-color: transparent;
+  flex: 1;
+  border-radius: var(--br-7xs);
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+
+.button,
+.labelButton,
+.nextButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  width: 152px;
+  justify-content: flex-end;
+  gap: var(--gap-5xl);
+}
+
+.labelButton {
+  height: 66px;
+  align-self: stretch;
+  justify-content: space-between;
+  padding: 0 var(--padding-21xl) var(--padding-29xl);
+display: flex;
+
+  box-sizing: border-box;
+  gap: 20px;
+
+}
+.middle{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.productCard,
+.productsSection,
+.productsList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.productCard {
+  overflow:auto;
+  width: 1628px;
+  overflow-x: hidden;
+  flex-direction: row;
+  gap: var(--gap-13xl);
+  max-width: 103%;
+}
+
+.productsSection,
+.productsList {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.productsList {
+  width: 1360px;
+  flex-direction: column;
+  padding: 0;
+  gap: var(--gap-13xl);
+}
+
+.productsSection {
+  flex-direction: row;
+  padding: 0 var(--padding-21xl) var(--padding-29xl);
+  text-align: left;
+  font-size: var(--heading-website-heading-5-semi-bold-size);
+  color: var(--neutral-900);
+  font-family: var(--text-m-medium);
+}

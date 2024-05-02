@@ -1,0 +1,52 @@
+.alertcheckCircleIcon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  min-height: 30px;
+}
+.textButton {
+  width: calc(100% - 94px);
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: var(--text-m-medium);
+  font-weight: 500;
+  font-size: var(--heading-website-heading-7-semi-bold-size);
+  color: var(--neutral-900);
+  min-width: 300px;
+  max-width: 100%;
+}
+.curvedCross {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  min-height: 30px;
+}
+.alert,
+.alert1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.alert1 {
+  border-radius: var(--br-7xs);
+  background-color: var(--success-50);
+  border: 1px solid var(--success-400);
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--padding-base) var(--padding-mid);
+  gap: var(--gap-base);
+}
+.alert {
+  flex-direction: column;
+  padding: var(--padding-xs) var(--padding-21xl);
+}

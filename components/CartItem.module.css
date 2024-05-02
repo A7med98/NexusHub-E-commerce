@@ -1,0 +1,223 @@
+.image,
+.imageIcon {
+  border-radius: var(--br-7xs);
+}
+.imageIcon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.image {
+  height: 138px;
+  width: 172px;
+  border: 1px solid var(--gray-200);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-2xs);
+}
+.rexusXierraX16 {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 30px;
+  font-weight: 500;
+}
+.curvedTrash2 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  min-height: 30px;
+}
+.labelIcon {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.category {
+  position: relative;
+  font-size: var(--text-s-regular-size);
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--text-m-medium);
+  color: var(--primary-800);
+  text-align: left;
+  display: inline-block;
+  min-width: 46px;
+}
+.type {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-3xs);
+  background-color: var(--blaze-orange-50);
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.type:hover {
+  background-color: var(--color-gainsboro-100);
+}
+.labelBadge {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.price {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 36px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 81px;
+  white-space: nowrap;
+}
+
+.button1 {
+  position: relative;
+  line-height: 26px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 82px;
+}
+
+.button {
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+.dividerIcon,
+.iconMinus {
+  height: 24px;
+  width: 1px;
+  position: relative;
+}
+.iconMinus {
+  height: 20px;
+  width: 20px;
+}
+.button3 {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 16px;
+}
+.iconPlus {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+.button2 {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  border: 1px solid var(--neutral-900);
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-lgi);
+  gap: var(--gap-sm);
+  font-size: var(--text-s-regular-size);
+  color: var(--neutral-900);
+}
+.action,
+.button2,
+.priceAction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.action {
+  width: 255px;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  text-align: center;
+  font-size: var(--text-m-medium-size);
+  color: var(--primary-500);
+}
+.priceAction {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--heading-mobile-heading-5-medium-size);
+}
+.content1 {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  min-width: 720px;
+}
+.container,
+.content,
+.content1 {
+  display: flex;
+  max-width: 100%;
+}
+.content {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.container {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--base-white);
+  border: 1px solid var(--gray-200);
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-3xl) var(--padding-4xl);
+}
+.cart1 {
+  width: 1360px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--heading-website-heading-7-semi-bold-size);
+  color: var(--neutral-900);
+  font-family: var(--text-m-medium);
+}
+@media screen and (max-width: 1200px) {
+  .content1 {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 825px) {
+  .priceAction {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rexusXierraX16 {
+    font-size: var(--text-m-medium-size);
+    line-height: 24px;
+  }
+  .labelIcon {
+    flex-wrap: wrap;
+  }
+  .price {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+}
