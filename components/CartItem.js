@@ -3,8 +3,23 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../store/cart-slice";
 import styles from "./CartItem.module.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Cart({ id, quantity }) {
+  const notify = () =>
+    toast.warn("Something Wrong Occured", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+
   const dispatch = useDispatch();
   const removeItemHandler = () => {
     dispatch(cartActions.removeItemFromCart(id));
@@ -15,6 +30,8 @@ export default function Cart({ id, quantity }) {
   };
   const deleteItemHandler = () => {
     dispatch(cartActions.deleteItemFromCart(id));
+    if (!id.changed) {
+    }
   };
   const [product, setProduct] = useState({});
 
@@ -29,6 +46,7 @@ export default function Cart({ id, quantity }) {
   }, []);
   return (
     <div className={styles.cart1}>
+      
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.image}>
@@ -42,7 +60,7 @@ export default function Cart({ id, quantity }) {
           <div className={styles.content1}>
             <div className={styles.labelBadge}>
               <div className={styles.labelIcon}>
-                <div className={styles.rexusXierraX16}>{product.title}</div>
+                <div className={styles.productTitle}>{product.title}</div>
                 <img
                   onClick={deleteItemHandler}
                   className={styles.curvedTrash2}
@@ -55,8 +73,15 @@ export default function Cart({ id, quantity }) {
                 <div className={styles.category}>{product.category}</div>
               </button>
             </div>
+            <div className={styles.CatPriceMob}>
+              <button className={styles.typeMob}>
+                <div className={styles.category}>{product.category}</div>
+              </button>
+              <div className={styles.priceMob}>${product.price * quantity}</div>
+            </div>
             <div className={styles.priceAction}>
               <div className={styles.price}>${product.price * quantity}</div>
+
               <div className={styles.action}>
                 <div className={styles.button}>
                   <div className={styles.button1}>Write Note</div>

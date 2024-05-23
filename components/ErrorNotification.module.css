@@ -119,7 +119,12 @@
 }
 @media screen and (max-width: 450px) {
   .label {
-    font-size: var(--text-m-medium-size);
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .alert1{
+    width: 300px;
+    max-width: 100%;
+    padding: 18px 18px ;
   }
 }

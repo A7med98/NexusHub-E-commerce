@@ -1,3 +1,26 @@
+.containerParent,
+.fRAMEHOME {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.containerParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-21xl);
+}
+.fRAMEHOME {
+  height: 224px;
+  flex-direction: row;
+  padding: 0 var(--padding-21xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--heading-website-heading-4-semi-bold-size);
+  color: var(--primary-500);
+  font-family: var(--text-m-medium);
+}
+
 .hub {
   color: var(--neutral-900);
 }
@@ -24,6 +47,14 @@
   height: 24px;
   width: 24px;
   position: relative;
+}
+.iconSearchSmall,
+.iconMenuSmall{
+  height: 24px;
+  width: 24px;
+  position: relative;
+  display: none;
+  align-self: center;
 }
 .container1,
 .description {
@@ -76,7 +107,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .inputFieldSupportText {
   align-self: stretch;
@@ -187,7 +218,6 @@
   font-family: var(--caption-caption-medium);
 }
 .container {
-  flex-wrap: wrap;
   align-self: stretch;
   flex-direction: row;
   justify-content: space-between;
@@ -236,30 +266,7 @@
   color: var(--neutral-500);
   font-family: var(--text-m-medium);
 }
-.containerParent,
-.fRAMEHOME {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
-.containerParent {
-  flex-wrap: wrap;
-  flex: 1;
-  flex-direction: column;
-  gap: var(--gap-21xl);
-}
-.fRAMEHOME {
-  flex-wrap: wrap;
-  height: 224px;
-  flex-direction: row;
-  padding: 0 var(--padding-21xl);
-  box-sizing: border-box;
-  text-align: center;
-  font-size: var(--heading-website-heading-4-semi-bold-size);
-  color: var(--primary-500);
-  font-family: var(--text-m-medium);
-}
+
 .dividerIcon {
   align-self: stretch;
   position: relative;
@@ -288,15 +295,43 @@
   max-width: 100%;
 }
 @media screen and (max-width: 450px) {
+
+  .nexushub{
+    font-size: 22.34px;
+  }
+  .nexushubWrapper{
+    gap: 0;
+
+  }
+  
   .navBar {
     display: none;
   }
-  .container{
-    flex-direction: column;
+  .fRAMEHOME{
+    height: 80px;
+    padding: 0 24px;
   }
   .inputField1{
     display: none;
 
+  }
+  .iconSearchSmall{
+    display: flex;
+    align-self: flex-end;
+    min-width: none;
+    padding: 0;
+  }
+  .iconMenuSmall{
+    display: block ;
+  }
+  .containerParent{
+    align-self: stretch;
+  }
+  .container{
+    gap: 8px;
+  }
+  .frameParent{
+    gap: 16px;
   }
 
 }

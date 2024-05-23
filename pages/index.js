@@ -7,18 +7,14 @@ import { useEffect, useRef, useState } from "react";
 import { fetchTechProducts } from "../utils/api";
 import { fetchCartData } from "../store/cart-actions";
 import { useDispatch } from "react-redux";
+import Timer from "../components/Timer";
 
 export default function Home() {
   let isInitial = true;
-  const timeToHours = 1.1 * 60 * 60 * 1000;
-  let countDownDate = new Date().getTime() + timeToHours;
   const dispatch = useDispatch();
 
   //states
   const [products, setProducts] = useState([]);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
 
   //refs
   const elementRef = useRef(null);
@@ -29,37 +25,6 @@ export default function Home() {
       dispatch(fetchCartData());
     }
   }, [dispatch]);
-  useEffect(() => {
-    const updateTime = setInterval(() => {
-      const now = new Date().getTime();
-
-      const difference = countDownDate - now;
-
-      const newHours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const newMinutes = Math.floor(
-        (difference % (1000 * 60 * 60)) / (1000 * 60)
-      );
-      const newSeconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-      setHours(newHours);
-      setMinutes(newMinutes);
-      setSeconds(newSeconds);
-
-      if (difference <= 0) {
-        clearInterval(updateTime);
-        console.log("The Time Has Ended");
-        setHours(0);
-        setMinutes(0);
-        setSeconds(0);
-      }
-    });
-
-    return () => {
-      clearInterval(updateTime);
-    };
-  }, []);
 
   useEffect(() => {
     const fetchProductsData = async () => {
@@ -90,36 +55,11 @@ export default function Home() {
       <div className={styles.middle}>
         {products.length > 0 && <Carousel slides={products} />}
         <div className={styles.labelButton}>
-          <div className={styles.labelTime}>
-            <h2 className={styles.specialDiscount}>Special Discount</h2>
-            <div className={styles.time}>
-              <div className={styles.hour}>
-                <div className={styles.hourDiv}>{hours}</div>
-              </div>
-              <div className={styles.dotsGroup}>
-                <div className={styles.dot} />
-                <div className={styles.dot} />
-              </div>
-              <div className={styles.minute}>
-                <div className={styles.minuteDiv}>
-                  {minutes < 10 ? "0" + minutes : minutes}
-                </div>
-              </div>
-              <div className={styles.dotsGroup}>
-                <div className={styles.dot} />
-                <div className={styles.dot} />
-              </div>
-              <div className={styles.second}>
-                <div className={styles.secondDiv}>
-                  {seconds < 10 ? "0" + seconds : seconds}
-                </div>
-              </div>
-            </div>
-          </div>
+          <Timer />
           <div className={styles.button}>
             <button
               onClick={() => {
-                handleHorizantalScroll(elementRef.current, 25, 250, -10);
+                handleHorizantalScroll(elementRef.current, 30, 250, -10);
               }}
               className={styles.previousButton}
             >
@@ -154,7 +94,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+          <div className={styles.productCardMob} >
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
       <Footer />
     </div>
   );

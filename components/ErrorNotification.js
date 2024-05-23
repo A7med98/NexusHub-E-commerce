@@ -1,6 +1,6 @@
 import styles from "./ErrorNotification.module.css";
 
-export default function Notification() {
+export default function ErrorNotification() {
   return (
     <section className={styles.footerInstance}>
       <div className={styles.alert}>

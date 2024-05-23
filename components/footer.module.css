@@ -1,6 +1,7 @@
 .hub {
   color: var(--neutral-900);
 }
+
 .nexushub {
   margin: 0;
   align-self: stretch;
@@ -11,6 +12,7 @@
   font-weight: 600;
   font-family: inherit;
 }
+
 .nexushubAllRights {
   width: 216.2px;
   position: relative;
@@ -20,6 +22,7 @@
   color: var(--neutral-600);
   display: inline-block;
 }
+
 .badgeIcon {
   align-self: stretch;
   width: 100%;
@@ -30,6 +33,7 @@
   height: 100%;
   transform: scale(1.667);
 }
+
 .wrapperBadge {
   align-self: stretch;
   width: 46px;
@@ -41,6 +45,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .badgeIcon1 {
   align-self: stretch;
   width: 100%;
@@ -51,6 +56,7 @@
   height: 100%;
   transform: scale(1.667);
 }
+
 .wrapperBadge1 {
   align-self: stretch;
   width: 46px;
@@ -62,6 +68,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .badgeIcon2 {
   align-self: stretch;
   width: 100%;
@@ -72,6 +79,7 @@
   height: 100%;
   transform: scale(1.667);
 }
+
 .wrapperBadge2 {
   align-self: stretch;
   width: 46px;
@@ -83,6 +91,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .badgeIcon3 {
   align-self: stretch;
   width: 100%;
@@ -93,6 +102,7 @@
   height: 100%;
   transform: scale(1.667);
 }
+
 .wrapperBadge3 {
   align-self: stretch;
   width: 46px;
@@ -104,6 +114,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .badgeIcon4 {
   align-self: stretch;
   width: 100%;
@@ -114,6 +125,7 @@
   height: 100%;
   transform: scale(1.667);
 }
+
 .wrapperBadge4 {
   align-self: stretch;
   width: 46px;
@@ -125,6 +137,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .logo,
 .payment {
   display: flex;
@@ -132,6 +145,7 @@
   justify-content: flex-start;
   box-sizing: border-box;
 }
+
 .payment {
   height: 30px;
   flex-direction: row;
@@ -139,6 +153,12 @@
   padding: 0 var(--padding-mid) 0 0;
   gap: 12px 8.8px;
 }
+
+.payment2 {
+  display: none;
+
+}
+
 .logo {
   width: 531.8px;
   flex-direction: column;
@@ -147,6 +167,7 @@
   min-width: 531.8px;
   max-width: 100%;
 }
+
 .company1 {
   align-self: stretch;
   position: relative;
@@ -154,6 +175,7 @@
   line-height: 30px;
   font-weight: 600;
 }
+
 .aboutUs,
 .contact,
 .partner {
@@ -162,6 +184,20 @@
   line-height: 26px;
   font-weight: 500;
 }
+
+.subTitleMob {
+  position: relative;
+  line-height: 16px;
+  font-weight: 400;
+  width: 382px;
+  height: 16px;
+  font-family: Inter;
+  font-size: 14px;
+  padding-top: 5px;
+  color: #5D5D5D;
+  cursor: default;
+}
+
 .company,
 .subMenu {
   display: flex;
@@ -169,27 +205,142 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .subMenu {
   align-self: stretch;
   gap: var(--gap-base);
   font-size: var(--text-m-medium-size);
   color: var(--neutral-600);
 }
+
+.subMenuMob {
+  display: none;
+
+}
+
+.subMenuMobActive {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: Spacing/Spacing - 2;
+  font-size: var(--text-m-medium-size);
+  color: var(--neutral-600);
+  position: absolute;
+  /* or absolute */
+  z-index: 9999;
+}
+
+.subMenuMob2 {
+  display: none;
+
+}
+
+.subMenuMobActive2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: Spacing/Spacing - 2;
+  font-size: var(--text-m-medium-size);
+  color: var(--neutral-600);
+  position: relative;
+  /* or absolute */
+  z-index: 9999;
+}
+
+.subMenuMob3 {
+  display: none;
+
+}
+
+.subMenuMobActive3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: Spacing/Spacing - 2;
+  font-size: var(--text-m-medium-size);
+  color: var(--neutral-600);
+  position: relative;
+  /* or absolute */
+  z-index: 9999;
+}
+
+.subMenuMob4 {
+  display: none;
+
+}
+
+.subMenuMobActive4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: Spacing/Spacing - 2;
+  font-size: var(--text-m-medium-size);
+  color: var(--neutral-600);
+  position: relative;
+  /* or absolute */
+  z-index: 9999;
+}
+
 .company {
   flex: 1;
-  padding: 0 0 var(--padding-23xl);
   box-sizing: border-box;
   gap: var(--gap-13xl);
   min-width: 143px;
   max-width: 191px;
 }
+
+.companyMob {
+  justify-content: center;
+  width: 382px;
+  height: 44px;
+  gap: Spacing/Spacing - 3;
+  cursor: pointer;
+  transition: margintop 0.3s ease;
+}
+
+.titleMob1 {
+  padding: 0;
+  text-decoration: none;
+  background-color: inherit;
+  border: none;
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 18.2px;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  width: 358px;
+  height: 18px;
+  justify-content: center;
+  text-align: initial;
+  text-justify: auto;
+  display: inline-block;
+  margin: auto;
+  cursor: pointer;
+
+}
+.Active1{
+  color: #EE701D;
+}
+
 .social1 {
   align-self: stretch;
   position: relative;
   letter-spacing: -0.01em;
   line-height: 30px;
   font-weight: 600;
+
 }
+
 .facebook,
 .instagram,
 .linkedin,
@@ -199,25 +350,21 @@
   line-height: 26px;
   font-weight: 500;
 }
-.social,
-.subMenu1 {
+
+.social {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.subMenu1 {
-  align-self: stretch;
-  gap: var(--gap-base);
-  font-size: var(--text-m-medium-size);
-  color: var(--neutral-600);
-}
+
 .social {
   flex: 1;
   gap: var(--gap-13xl);
   min-width: 143px;
   max-width: 191px;
 }
+
 .faq1 {
   align-self: stretch;
   position: relative;
@@ -225,6 +372,7 @@
   line-height: 30px;
   font-weight: 600;
 }
+
 .account,
 .deliveries,
 .orders,
@@ -234,25 +382,21 @@
   line-height: 26px;
   font-weight: 500;
 }
-.faq,
-.subMenu2 {
+
+.faq {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.subMenu2 {
-  align-self: stretch;
-  gap: var(--gap-base);
-  font-size: var(--text-m-medium-size);
-  color: var(--neutral-600);
-}
+
 .faq {
   flex: 1;
   gap: var(--gap-13xl);
   min-width: 143px;
   max-width: 191px;
 }
+
 .resources1 {
   align-self: stretch;
   position: relative;
@@ -260,6 +404,7 @@
   line-height: 30px;
   font-weight: 600;
 }
+
 .blog,
 .course,
 .eBooks,
@@ -269,21 +414,14 @@
   line-height: 26px;
   font-weight: 500;
 }
-.subMenu3 {
-  align-self: stretch;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-  font-size: var(--text-m-medium-size);
-  color: var(--neutral-600);
-}
+
 .footer,
 .menu,
-.resources,
-.subMenu3 {
+.resources {
   display: flex;
   align-items: flex-start;
 }
+
 .resources {
   flex: 1;
   flex-direction: column;
@@ -292,11 +430,13 @@
   min-width: 143px;
   max-width: 191px;
 }
+
 .footer,
 .menu {
   flex-direction: row;
   max-width: 100%;
 }
+
 .menu {
   width: 788.2px;
   justify-content: flex-end;
@@ -305,6 +445,20 @@
   font-size: var(--heading-website-heading-7-semi-bold-size);
   color: var(--neutral-900);
 }
+
+.menuMob {
+  display: none;
+  width: 382px;
+  justify-content: flex-end;
+  gap: var(--gap-5xs);
+  font-size: var(--heading-website-heading-7-semi-bold-size);
+  color: var(--neutral-900);
+  flex-direction: row;
+  max-width: 100%;
+  align-items: flex-start;
+  max-height: Hug (272px);
+}
+
 .footer {
   align-self: stretch;
   background-color: var(--gray-50);
@@ -319,46 +473,104 @@
   color: var(--primary-500);
   font-family: var(--text-m-medium);
 }
+
+.arrowImg {
+  align-self: flex-end;
+  justify-self: flex-end;
+  transition: transform 0.3s ease-out;
+}
+.activeArrow{
+  transform: rotate(180deg);
+}
+
+.menuMobWrapperActive {
+  margin-top: 60px;
+}
+
+.menuMobWrapperActive2 {
+  margin-top: 80px;
+}
+
 @media screen and (max-width: 1425px) {
+
   .logo,
   .menu {
     flex: 1;
   }
+
   .footer {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .menu {
     min-width: 100%;
   }
 }
-@media screen and (max-width: 825px) {
-  .nexushub {
-    font-size: var(--font-size-10xl);
-    line-height: 37px;
-  }
+
+@media screen and (max-width: 450px) {
+.companyMob{
+  background-color: none;
+}
   .logo {
     min-width: 100%;
   }
-  .menu {
-    flex-wrap: wrap;
-  }
+
   .footer {
     padding: var(--padding-72xl) var(--padding-11xl);
     box-sizing: border-box;
   }
-}
-@media screen and (max-width: 450px) {
+
+  .payment {
+    display: none;
+  }
+
+  .payment2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 50px;
+    gap: 12px 8.8px;
+
+  }
+
   .nexushub {
-    font-size: var(--font-size-3xl);
-    line-height: 28px;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
   }
-  .company1,
-  .faq1,
-  .resources1,
-  .social1 {
-    font-size: var(--text-m-medium-size);
-    line-height: 24px;
+
+  .menu {
+    display: none;
   }
+
+  .menuMob {
+    display: block;
+  }
+
+  .aboutUs,
+  .contact,
+  .partner,
+  .account,
+  .deliveries,
+  .orders,
+  .payments,
+  .blog,
+  .course,
+  .eBooks,
+  .tutorials,
+  .facebook,
+  .instagram,
+  .linkedin,
+  .twitter {
+    font-size: 14px;
+  }
+
+
 }

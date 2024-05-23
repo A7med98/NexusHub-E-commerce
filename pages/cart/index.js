@@ -18,7 +18,7 @@ export default function Cart() {
   useEffect(() => {
     if (!isAuth) {
       // alert("Please Login to view cart");
-
+      console.log("Please Login to view cart")
       router.replace("/");
     }
   }, []);

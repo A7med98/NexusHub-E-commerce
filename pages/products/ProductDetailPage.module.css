@@ -6,12 +6,12 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  object-fit:scale-down;
+  object-fit: scale-down;
   cursor: pointer;
 }
 
 .active {
-  border:  2px solid #EE701D ;
+  border: 2px solid #EE701D;
 }
 
 .imageList {
@@ -36,7 +36,7 @@
   max-width: 100%;
   overflow: hidden;
   flex-shrink: 0;
-  object-fit:scale-down;
+  object-fit: scale-down;
 
 }
 
@@ -114,7 +114,6 @@
 }
 
 .container {
-  height: 922px;
   align-self: stretch;
   flex-direction: row;
   padding: var(--padding-21xl);
@@ -227,20 +226,35 @@
 
 @media screen and (max-width: 450px) {
   .image {
+    flex-wrap: wrap-reverse;
     gap: var(--gap-base);
+    padding-left: 24px;
+  }
+.mainimageIcon{
+  width: 382px;
+  height: 256px;
+}
+  .imageList {
+    flex-direction: row;
+    width: 382px;
+    height: 99px;
   }
 
   .content {
     gap: var(--gap-5xl);
+    
   }
 
   .productDetailCard {
     gap: var(--gap-xl);
+    width: 430px;
+    min-width: 430px;
   }
 
   .container {
     padding-top: var(--padding-xl);
-    padding-bottom: var(--padding-xl);
+    padding-bottom: 44px;
+    padding-left: 0;
     box-sizing: border-box;
   }
 }

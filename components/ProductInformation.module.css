@@ -278,4 +278,14 @@
   .productInformation {
     gap: var(--gap-base);
   }
+  .description1{
+    width: 382px;
+    
+    font-size: 16px;
+  }
+  .description{
+    height: 160px;
+    width: 382px;
+    max-width: 382px;
+  }
 }
